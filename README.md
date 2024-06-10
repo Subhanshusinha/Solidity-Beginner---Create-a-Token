@@ -20,9 +20,9 @@ Balance Tracking: Mapping to keep track of balances for each address.
     uint public totalSupply;
 
 These lines declare three public state variables:
-. tokenName: Stores the name of the token.
-. tokenAbbreviation: Stores the abbreviation (symbol) of the token.
-. totalSupply: Stores the total supply of the token.
+a. tokenName: Stores the name of the token.
+b. tokenAbbreviation: Stores the abbreviation (symbol) of the token.
+c. totalSupply: Stores the total supply of the token.
 
 5. mapping(address => uint) public balances :- This line declares a mapping called balances that links an address to the number of tokens held by that address.
 
@@ -34,9 +34,9 @@ These lines declare three public state variables:
     }
 
 The constructor is a special function that runs once when the contract is deployed. It initializes the token's details:
-. tokenName: Sets the token's name to _name.
-. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: .
-. totalSupply: Sets the initial total supply to _initialSupply.
+a tokenName: Sets the token's name to _name.
+b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: .
+c. totalSupply: Sets the initial total supply to _initialSupply.
 . balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
 
 7.  function mint(address _address, uint _value) public {         
