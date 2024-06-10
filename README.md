@@ -39,7 +39,7 @@ Features:
 
 6. constructor(string memory _name, string memory _Abbreviation, uint _initialSupply) {
 
-    tokenName = _name;
+        tokenName = _name;
    
         tokenAbbreviation = _Abbreviation;
    
