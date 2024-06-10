@@ -12,7 +12,6 @@ Features:
 
       d. Balance Tracking: Mapping to keep track of balances for each address.
 
-
 1. SPDX-License-Identifier:MIT :-This line specifies the license under which the contract is published. In this case, it’s the MIT license.
 
 2. pragma solidity 0.8.18 :- This line indicates that the source code is written for Solidity version 0.8.18.
