@@ -24,35 +24,40 @@ Features:
 
    string public tokenAbbreviation;
 
-    uint public totalSupply;
+   uint public totalSupply;
 
-These lines declare three public state variables:
+         These lines declare three public state variables:
 
-a. tokenName: Stores the name of the token.
+         a. tokenName: Stores the name of the token.
 
-b. tokenAbbreviation: Stores the abbreviation (symbol) of the token.
+         b. tokenAbbreviation: Stores the abbreviation (symbol) of the token.
 
-c. totalSupply: Stores the total supply of the token.
+         c. totalSupply: Stores the total supply of the token.
 
 
 5. mapping(address => uint) public balances :- This line declares a mapping called balances that links an address to the number of tokens held by that address.
 
 6. constructor(string memory _name, string memory _Abbreviation, uint _initialSupply) {
-        tokenName = _name;
+
+    tokenName = _name;
+   
         tokenAbbreviation = _Abbreviation;
+   
         totalSupply = _initialSupply;
+   
         balances[msg.sender] = _initialSupply;
+   
     }
 
-The constructor is a special function that runs once when the contract is deployed. It initializes the token's details:
+                  The constructor is a special function that runs once when the contract is deployed. It initializes the token's details:
 
-a. tokenName: Sets the token's name to _name.
+                  a. tokenName: Sets the token's name to _name.
 
-b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: 
+                  b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: 
 
-c. totalSupply: Sets the initial total supply to _initialSupply.
+                  c. totalSupply: Sets the initial total supply to _initialSupply.
 
-d. balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
+                  d. balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
 
 7.  function mint(address _address, uint _value) public {         
         totalSupply += _value;
