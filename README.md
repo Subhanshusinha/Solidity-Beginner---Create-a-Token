@@ -21,7 +21,9 @@ Features:
       This line begins the definition of the CustomToken contract.
 
 5. string public tokenName;
-    string public tokenAbbreviation;
+
+   string public tokenAbbreviation;
+
     uint public totalSupply;
 
 These lines declare three public state variables:
