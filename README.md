@@ -4,7 +4,6 @@
 
 Features:
 a. Token Details: Public variables for token name, abbreviation, and total supply.
-
 b. Minting: Functionality to mint new tokens and increase the total supply.
 c. Burning: Functionality to burn tokens and decrease the total supply.
 d. Balance Tracking: Mapping to keep track of balances for each address.
@@ -36,8 +35,11 @@ c. totalSupply: Stores the total supply of the token.
 
 The constructor is a special function that runs once when the contract is deployed. It initializes the token's details:
 a. tokenName: Sets the token's name to _name.
-b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: .
+
+b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: 
+
 c. totalSupply: Sets the initial total supply to _initialSupply.
+
 d. balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
 
 7.  function mint(address _address, uint _value) public {         
