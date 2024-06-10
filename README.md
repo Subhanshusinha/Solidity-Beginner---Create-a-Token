@@ -17,9 +17,10 @@ Features:
 2. pragma solidity 0.8.18 :- This line indicates that the source code is written for Solidity version 0.8.18.
    
 3. contract CustomToken {
-    This line begins the definition of the CustomToken contract.
 
-4. string public tokenName;
+      This line begins the definition of the CustomToken contract.
+
+5. string public tokenName;
     string public tokenAbbreviation;
     uint public totalSupply;
 
