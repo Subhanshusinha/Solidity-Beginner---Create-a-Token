@@ -2,15 +2,15 @@
 
 #Code Explanation
 
-Features:
+   Features:
 
-a. Token Details: Public variables for token name, abbreviation, and total supply.
+      a. Token Details: Public variables for token name, abbreviation, and total supply.
 
-b. Minting: Functionality to mint new tokens and increase the total supply.
+      b. Minting: Functionality to mint new tokens and increase the total supply.
 
-c. Burning: Functionality to burn tokens and decrease the total supply.
+      c. Burning: Functionality to burn tokens and decrease the total supply.
 
-d. Balance Tracking: Mapping to keep track of balances for each address.
+      d. Balance Tracking: Mapping to keep track of balances for each address.
 
 
 1. SPDX-License-Identifier:MIT :-This line specifies the license under which the contract is published. In this case, it’s the MIT license.
