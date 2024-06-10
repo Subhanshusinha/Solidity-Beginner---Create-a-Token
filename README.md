@@ -3,6 +3,7 @@
 #Code Explanation
 
 Features:
+
       a. Token Details: Public variables for token name, abbreviation, and total supply.
 
       b. Minting: Functionality to mint new tokens and increase the total supply.
