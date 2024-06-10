@@ -34,10 +34,10 @@ c. totalSupply: Stores the total supply of the token.
     }
 
 The constructor is a special function that runs once when the contract is deployed. It initializes the token's details:
-a tokenName: Sets the token's name to _name.
+a. tokenName: Sets the token's name to _name.
 b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: .
 c. totalSupply: Sets the initial total supply to _initialSupply.
-. balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
+d. balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
 
 7.  function mint(address _address, uint _value) public {         
         totalSupply += _value;
@@ -49,8 +49,8 @@ c. totalSupply: Sets the initial total supply to _initialSupply.
     .  _address: The address to which new tokens will be assigned.
     .  _value: The number of tokens to mint.
    Functionality:
-    .  totalSupply += _value;: Increases the total supply by the specified amount.
-    .  balances[_address] += _value;: Increases the balance of the specified address by the same amount.
+    a.  totalSupply += _value;: Increases the total supply by the specified amount.
+    b.  balances[_address] += _value;: Increases the balance of the specified address by the same amount.
 
 8. function burn(address _from, uint _value) public {                     
         require(balances[_from] >= _value, "Too little balance to burn");
@@ -62,10 +62,10 @@ c. totalSupply: Sets the initial total supply to _initialSupply.
      .  _from: The address from which tokens will be burned.
      .  _value: The number of tokens to burn.
    Functionality:
-    .   require(balances[_from] >= _value, "Too little balance to burn");: Ensures the address has enough tokens to burn. If not, it reverts the transaction with 
+    a.   require(balances[_from] >= _value, "Too little balance to burn");: Ensures the address has enough tokens to burn. If not, it reverts the transaction with 
         an error message.
-    .   totalSupply -= _value;: Decreases the total supply by the specified amount.
-    .   balances[_from] -= _value;: Decreases the balance of the specified address by the same amount.
+    b.   totalSupply -= _value;: Decreases the total supply by the specified amount.
+    c.   balances[_from] -= _value;: Decreases the balance of the specified address by the same amount.
    
    
 
