@@ -3,10 +3,15 @@
 #Code Explanation
 
 Features:
+
 a. Token Details: Public variables for token name, abbreviation, and total supply.
+
 b. Minting: Functionality to mint new tokens and increase the total supply.
+
 c. Burning: Functionality to burn tokens and decrease the total supply.
+
 d. Balance Tracking: Mapping to keep track of balances for each address.
+
 
 1. SPDX-License-Identifier:MIT :-This line specifies the license under which the contract is published. In this case, it’s the MIT license.
 
@@ -20,9 +25,13 @@ d. Balance Tracking: Mapping to keep track of balances for each address.
     uint public totalSupply;
 
 These lines declare three public state variables:
+
 a. tokenName: Stores the name of the token.
+
 b. tokenAbbreviation: Stores the abbreviation (symbol) of the token.
+
 c. totalSupply: Stores the total supply of the token.
+
 
 5. mapping(address => uint) public balances :- This line declares a mapping called balances that links an address to the number of tokens held by that address.
 
@@ -34,6 +43,7 @@ c. totalSupply: Stores the total supply of the token.
     }
 
 The constructor is a special function that runs once when the contract is deployed. It initializes the token's details:
+
 a. tokenName: Sets the token's name to _name.
 
 b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: 
