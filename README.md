@@ -18,7 +18,7 @@ Features:
    
 3. contract CustomToken {
 
-      This line begins the definition of the CustomToken contract.
+        This line begins the definition of the CustomToken contract.
 
 5. string public tokenName;
 
@@ -59,32 +59,54 @@ Features:
 
                   d. balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
 
-7.  function mint(address _address, uint _value) public {         
+7.  function mint(address _address, uint _value) public {
+        
         totalSupply += _value;
+    
         balances[_address] += _value;
+    
     }
 
  This function creates new tokens and assigns them to a specified address.
+ 
    Parameters:
+   
     .  _address: The address to which new tokens will be assigned.
+    
     .  _value: The number of tokens to mint.
-   Functionality:
+    
+   Functionality: 
+   
     a.  totalSupply += _value;: Increases the total supply by the specified amount.
+    
     b.  balances[_address] += _value;: Increases the balance of the specified address by the same amount.
+    
 
-8. function burn(address _from, uint _value) public {                     
+8. function burn(address _from, uint _value) public {
+                   
         require(balances[_from] >= _value, "Too little balance to burn");
+   
         totalSupply -= _value;
+   
         balances[_from] -= _value;
+   
     }
+   
  The burn function allows us to destroy tokens:
+
    Parameters:
+   
      .  _from: The address from which tokens will be burned.
+     
      .  _value: The number of tokens to burn.
+     
    Functionality:
+   
     a.   require(balances[_from] >= _value, "Too little balance to burn");: Ensures the address has enough tokens to burn. If not, it reverts the transaction with 
         an error message.
+        
     b.   totalSupply -= _value;: Decreases the total supply by the specified amount.
+    
     c.   balances[_from] -= _value;: Decreases the balance of the specified address by the same amount.
    
    
