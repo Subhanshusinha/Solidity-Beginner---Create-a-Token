@@ -2,7 +2,7 @@
 
 #Code Explanation
 
-   Features:
+Features:
 
       a. Token Details: Public variables for token name, abbreviation, and total supply.
 
