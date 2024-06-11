@@ -25,7 +25,7 @@ To deploy and interact with the Custom Token contract, you will need to use a co
 
 ```solidity```
 //Example deployment
-CustomToken myToken = new CustomToken("Karan", "MIT", 1000000);
+CustomToken myToken = new CustomToken("Karan", "MIT", 1000);
 
 3. Once deployed, you can interact with the contract using its public functions:
 
