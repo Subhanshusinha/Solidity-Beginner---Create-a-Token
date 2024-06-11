@@ -1,114 +1,50 @@
-# Solidity-Beginner---Create-a-Token
+# Project - Custom Token 
 
-#Code Explanation
+Custom Token is a simple Solidity smart contract for creating custom tokens on the Ethereum blockchain.
 
-Features:
+## Description
 
-      a. Token Details: Public variables for token name, abbreviation, and total supply.
+The Custom Token Project is a Solidity smart contract that allows you to create and manage your own custom ERC-20 token. This contract provides functionality for minting new tokens, burning existing tokens, and tracking the total supply and individual balances of token holders.
 
-      b. Minting: Functionality to mint new tokens and increase the total supply.
+## Getting Started
 
-      c. Burning: Functionality to burn tokens and decrease the total supply.
+### Installing
 
-      d. Balance Tracking: Mapping to keep track of balances for each address.
+1. Make sure you have a compatible Solidity compiler installed (version 0.8.18 or higher).
+2. Copy the provided Solidity code into a new file (e.g., `CustomToken.sol`).
 
-1. SPDX-License-Identifier:MIT :-This line specifies the license under which the contract is published. In this case, it’s the MIT license.
+### Executing program
 
-2. pragma solidity 0.8.18 :- This line indicates that the source code is written for Solidity version 0.8.18.
-   
-3. contract CustomToken {
+To deploy and interact with the Custom Token contract, you will need to use a compatible Ethereum client or development environment, such as Remix IDE
 
-        This line begins the definition of the CustomToken contract.
+1. Compile the `CustomToken.sol` file.
+2. Deploy the contract, providing the required parameters:
+  - `name`: The name of your custom token (e.g., "Karan").
+  - `abbreviation`: The abbreviation or symbol for your token (e.g., "MIT").
+  - `initialSupply`: The initial total supply of tokens to be minted.
 
-5. string public tokenName;
+```solidity```
+//Example deployment
+CustomToken myToken = new CustomToken("Karan", "MIT", 0);
 
-   string public tokenAbbreviation;
+### Once deployed, you can interact with the contract using its public functions:
 
-   uint public totalSupply;
+1. `mint(address, uint)`: Mint new tokens and assign them to a specific address.
+2. `burn(address, uint)`: Burn or destroy tokens from a specific address.
+3. `balances(address)`: View the token balance of a specific address.
+4. `totalSupply()`: View the total supply of tokens.
 
-         These lines declare three public state variables:
+## Help
 
-         a. tokenName: Stores the name of the token.
+If you encounter any issues or have questions, feel free to reach out to the contributors.
 
-         b. tokenAbbreviation: Stores the abbreviation (symbol) of the token.
+## Authors
 
-         c. totalSupply: Stores the total supply of the token.
+Contributors names and Email info
 
+Subhanshu sinha and ( subhanshu.sinha667@gmail.com )
 
-5. mapping(address => uint) public balances :- This line declares a mapping called balances that links an address to the number of tokens held by that address.
+## License
 
-6. constructor(string memory _name, string memory _Abbreviation, uint _initialSupply) {
-
-        tokenName = _name;
-   
-        tokenAbbreviation = _Abbreviation;
-   
-        totalSupply = _initialSupply;
-   
-        balances[msg.sender] = _initialSupply;
-   
-    }
-
-                  The constructor is a special function that runs once when the contract is deployed. It initializes the token's details:
-
-                  a. tokenName: Sets the token's name to _name.
-
-                  b. tokenAbbreviation: Sets the token's abbreviation to _Abbreviation: 
-
-                  c. totalSupply: Sets the initial total supply to _initialSupply.
-
-                  d. balances[msg.sender]: Assigns the entire initial supply to the address that deploys the contract (msg.sender).
-
-7.  function mint(address _address, uint _value) public {
-        
-        totalSupply += _value;
-    
-        balances[_address] += _value;
-    
-    }
-
- This function creates new tokens and assigns them to a specified address.
- 
-   Parameters:
-   
-    .  _address: The address to which new tokens will be assigned.
-    
-    .  _value: The number of tokens to mint.
-    
-   Functionality: 
-   
-    a.  totalSupply += _value;: Increases the total supply by the specified amount.
-    
-    b.  balances[_address] += _value;: Increases the balance of the specified address by the same amount.
-    
-
-8. function burn(address _from, uint _value) public {
-                   
-        require(balances[_from] >= _value, "Too little balance to burn");
-   
-        totalSupply -= _value;
-   
-        balances[_from] -= _value;
-   
-    }
-   
- The burn function allows us to destroy tokens:
-
-   Parameters:
-   
-     .  _from: The address from which tokens will be burned.
-     
-     .  _value: The number of tokens to burn.
-     
-   Functionality:
-   
-    a.   require(balances[_from] >= _value, "Too little balance to burn");: Ensures the address has enough tokens to burn. If not, it reverts the transaction with 
-        an error message.
-        
-    b.   totalSupply -= _value;: Decreases the total supply by the specified amount.
-    
-    c.   balances[_from] -= _value;: Decreases the balance of the specified address by the same amount.
-   
-   
-
+This project is licensed under the MIT License - see the LICENSE file for details.
 
