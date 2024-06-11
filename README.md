@@ -23,9 +23,9 @@ To deploy and interact with the Custom Token contract, you will need to use a co
   - `abbreviation`: The abbreviation or symbol for your token (e.g., "MIT").
   - `initialSupply`: The initial total supply of tokens to be minted.
 
-```solidity```
+```solidity
 //Example deployment
-CustomToken myToken = new CustomToken("Karan", "MIT", 0);
+CustomToken myToken = new CustomToken("Karan", "MIT", 1000000);
 
 ### Once deployed, you can interact with the contract using its public functions:
 
