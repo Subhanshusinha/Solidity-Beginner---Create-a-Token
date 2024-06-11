@@ -27,7 +27,7 @@ To deploy and interact with the Custom Token contract, you will need to use a co
 //Example deployment
 CustomToken myToken = new CustomToken("Karan", "MIT", 1000000);
 
-### Once deployed, you can interact with the contract using its public functions:
+3. Once deployed, you can interact with the contract using its public functions:
 
   - `mint(address, uint)`: Mint new tokens and assign them to a specific address.
   - `burn(address, uint)`: Burn or destroy tokens from a specific address.
