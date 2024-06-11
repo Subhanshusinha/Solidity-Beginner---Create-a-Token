@@ -29,10 +29,10 @@ CustomToken myToken = new CustomToken("Karan", "MIT", 1000000);
 
 ### Once deployed, you can interact with the contract using its public functions:
 
-1. `mint(address, uint)`: Mint new tokens and assign them to a specific address.
-2. `burn(address, uint)`: Burn or destroy tokens from a specific address.
-3. `balances(address)`: View the token balance of a specific address.
-4. `totalSupply()`: View the total supply of tokens.
+  - `mint(address, uint)`: Mint new tokens and assign them to a specific address.
+  - `burn(address, uint)`: Burn or destroy tokens from a specific address.
+  - `balances(address)`: View the token balance of a specific address.
+  - `totalSupply()`: View the total supply of tokens.
 
 ## Help
 
