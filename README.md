@@ -29,6 +29,7 @@ To deploy and interact with the Custom Token contract:
   - `initialSupply`: The initial total supply of tokens to be minted.
 
 Example deployment in Solidity:
+
     CustomToken myToken = new CustomToken("Karan", "MIT", 1000);
 
 3. Once deployed, Interact with the contract using its public functions:
