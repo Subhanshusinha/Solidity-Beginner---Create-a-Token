@@ -25,9 +25,7 @@ To deploy and interact with the Custom Token contract:
    
    Provide the required parameters during deployment:
   - `name`: The name of your custom token (e.g., "Karan").
-    
   - `abbreviation`: The abbreviation or symbol for your token (e.g., "MIT").
-    
   - `initialSupply`: The initial total supply of tokens to be minted.
 
 Example deployment in Solidity:
@@ -37,7 +35,7 @@ Example deployment in Solidity:
 
   - `mint(address _address, uint _amount)`: Mint new tokens and assign them to a specific address.
 ` - `burn(address _from, uint _amount)`: Burn or destroy tokens from a specific address.
-  ` `balances(address _address)`: View the token balance of a specific address.
+  - `balances(address _address)`: View the token balance of a specific address.
   - `totalSupply()`: View the total supply of tokens.
 ## Help
 
