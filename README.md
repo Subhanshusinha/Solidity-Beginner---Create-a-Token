@@ -34,9 +34,10 @@ Example deployment in Solidity:
 3. Once deployed, Interact with the contract using its public functions:
 
   - `mint(address _address, uint _amount)`: Mint new tokens and assign them to a specific address.
-` - `burn(address _from, uint _amount)`: Burn or destroy tokens from a specific address.
+  - `burn(address _from, uint _amount)`: Burn or destroy tokens from a specific address.
   - `balances(address _address)`: View the token balance of a specific address.
   - `totalSupply()`: View the total supply of tokens.
+    
 ## Help
 
 If you encounter any issues or have questions, feel free to reach out to the contributors.
