@@ -25,7 +25,9 @@ To deploy and interact with the Custom Token contract:
    
    Provide the required parameters during deployment:
   - `name`: The name of your custom token (e.g., "Karan").
+    
   - `abbreviation`: The abbreviation or symbol for your token (e.g., "MIT").
+    
   - `initialSupply`: The initial total supply of tokens to be minted.
 
 Example deployment in Solidity:
